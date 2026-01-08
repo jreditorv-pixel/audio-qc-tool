@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    background: white;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+#qcDetails {
+    margin-top: 20px;
+}
+
+.qcItem {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #4a90e2;
+    background-color: #eef5fc;
+    border-radius: 4px;
+}
+
+.qcItem.warning {
+    border-left-color: #f5a623;
+    background-color: #fff7e6;
+}
+
+.qcItem.fail {
+    border-left-color: #d0021b;
+    background-color: #ffe6e6;
+}
