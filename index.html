@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio QC Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Audio Quality Control Tool</h1>
+        <nav>
+            <a href="#upload">Upload Audio</a>
+            <a href="#results">QC Results</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>What This Tool Does</h2>
+        <p>
+            This tool helps check audio data quality for <strong>ASR (Speech Recognition)</strong>, <strong>TTS (Text-to-Speech)</strong>, and AI training purposes.
+        </p>
+    </section>
+
+    <section id="upload">
+        <h2>Upload Audio</h2>
+        <p>Drag & drop your audio file here, or click the button:</p>
+        <input type="file" id="audioFile">
+        <button onclick="runQC()">Run QC</button>
+    </section>
+
+    <section id="results">
+        <h2>QC Results</h2>
+        <div id="qcSummary">
+            <p><strong>Status:</strong> <span id="qcStatus">–</span></p>
+        </div>
+        <div id="qcDetails">
+            <!-- QC parameters will appear here -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            This tool demonstrates key audio QC parameters used in research and industry for ASR and TTS.  
+            Parameters are based on standards such as <a href="https://www.itu.int/rec/T-REC-P.863">ITU-T P.863</a> and <a href="https://tech.ebu.ch/publications/r128">EBU R128</a>.
+        </p>
+    </section>
+
+    <footer>
+        <p>Demo Audio QC Tool | Powered by GitHub Pages</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
